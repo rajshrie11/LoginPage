@@ -8,9 +8,9 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   var username = document.getElementById("username");
-  var password = document.getElementById("password");
+  var email = document.getElementById("email");
 
-  if (username.value == "" || password.value == "") {
+  if (username.value == "" || email.value == "") {
     error.push("Input field cannot be empty");
   }
 

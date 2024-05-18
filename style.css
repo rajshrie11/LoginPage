@@ -7,16 +7,221 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://www.ctdi.com/wp-content/uploads/2021/01/ctdi-location-exterior-1024x640.jpg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  font-size: 14px;
 }
 
-.box {
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+.contact-left {
+  background-color: #fff;
+}
+
+.contact-right {
+  background-color: #1c00b5;
+  color: rgb(24, 2, 2);
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #0d0649;
+  text-align: center;
+}
+
+.container h4 {
+  font-size: 14px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #0d0649;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-row .input-group {
+  flex: 1 1 45%;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+}
+
+textarea {
+  border: 1px solid #ccc;
+}
+
+label {
+  margin-bottom: 6px;
+  display: block;
+  color: #1c00bc;
+}
+
+#btn {
+  background: #1c00b5;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.5);
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #604cbbca;
+}
+
+.contact-left h3 {
+  color: #1c00b5;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-right h2 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-right table {
+  width: 100%;
+}
+
+tr td:first-child {
+  padding-right: 20px;
+}
+
+tr td {
+  padding-top: 20px;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+}
+
+/* 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+    line-height: 50px;
+  } */
+
+/* @media (max-width: 960px) {
+  h1 {
+    font-size: 10px;
+    /* line-height: 50px; */
+/* } */
+/* h2 {
+    font-size: 5px;
+  }
+  .contact-left h3 {
+    font-weight: 300;
+  }
+
+  /* form {
+    font-size: 10px;
+  } */
+/* body { */
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+/* font-weight: 200; */
+/* font-style: normal; */
+/* font-family: "Poppins", sans-serif; */
+
+/* font-size: 10px; */
+/* } */
+/* } */
+
+/* @media (max-width: 880px) { */
+/* h1 {
+    font-size: 5px; */
+/* line-height: 50px; */
+/* } */
+/* body { */
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+/* font-weight: 100; */
+/* font-style: normal; */
+/* font-family: "Poppins", sans-serif; */
+
+/* font-size: 5px;
+  }
+} */
+
+/* @media (max-width: 880px) {
+  h1 { */
+/* font-size: 0.5rem; */
+/* line-height: 50px; */
+/* } */
+/* body { */
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+/* font-weight: 50; */
+/* font-style: normal; */
+/* font-family: "Poppins", sans-serif; */
+
+/* font-size: 0.5px; */
+/* 
+/* } */
+/* .box {
   border-radius: 20px;
   width: 300px;
   padding: 30px;
@@ -98,4 +303,4 @@ body {
     font-size: 36px;
     line-height: 50px;
   }
-}
+} */
