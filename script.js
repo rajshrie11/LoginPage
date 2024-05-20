@@ -14,7 +14,7 @@ form.addEventListener("submit", function (e) {
     error.push("Input field cannot be empty");
   }
 
-  alert("Login Successfull");
+  alert("Form sent Successfull");
 
   var message = document.getElementById("message");
 
